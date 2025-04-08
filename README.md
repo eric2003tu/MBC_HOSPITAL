@@ -7,3 +7,5 @@ This Hospital project by Team 1.
 6. TUYISHIME Eric
 7. HERVE
 8. MUNYEMANA Gadi
+
+   Refer to this documentation: https://docs.google.com/document/d/1NWANyNkAXgMCEGGNO6gioiW_F0qHHZWTCn3x7uvVZNE/edit?usp=sharing
