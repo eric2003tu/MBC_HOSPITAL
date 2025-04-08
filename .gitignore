@@ -1,0 +1,21 @@
+# Ignore build directories
+build/
+out/
+target/
+*.class
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# IntelliJ files
+.idea/
+*.iml
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Web app output
+webapp/WEB-INF/classes/
