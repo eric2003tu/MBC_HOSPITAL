@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page language="java" contentType="text/html;charset=UTF-8" %>
+<%@ page import="jakarta.servlet.http.HttpSession" %>
 <html>
 <head><title>Login</title>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>

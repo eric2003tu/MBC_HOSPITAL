@@ -6,6 +6,30 @@
         response.sendRedirect("login.jsp");
         return;
     }
+    
+    
+    
+    String userType = (String) session.getAttribute("usertype");
+    if (userType == null) {
+        response.sendRedirect("login.jsp");
+        return;
+    }
+    
+      // Redirect based on user type
+
+    String[] roles = {"doctor", "nurse", "patient"}; 
+    if (userType.toLowerCase().equals(roles[0])) {
+        response.sendRedirect("doctor.jsp");
+        return;
+    } else if (userType.toLowerCase().equals(roles[1])) {
+        response.sendRedirect("nurse.jsp");
+        return;
+    } else if (userType.toLowerCase().equals(roles[2])) {
+        response.sendRedirect("patient.jsp");
+        return;
+    }
+%>
+
 %>
 <html>
 <head><title>Dashboard</title></head>
