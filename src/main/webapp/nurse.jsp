@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nurse Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 </head>
 <body class="bg-gray-100">
 
     <!-- Navbar -->
-    <nav class="bg-blue-600 text-white p-4">
+    <nav class="bg-blue-600 text-white p-4 sticky top-0">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">Nurse Dashboard</h1>
             <div>
@@ -21,13 +23,30 @@
     </nav>
 
     <!-- Main Content -->              
-    <div class="container mx-auto mt-8"> 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> 
+    <div class="container mx-auto w-full max-h-screen h-screen mt-8 grid grid-cols-[1fr_6fr] p-2">
+    
+                <!-- Left navigation -->
+     
+     <div class ="w-full h-full overflow-y-auto p-3 flex flex-col">
+     
+   
+
+      </div>
+            
+                        <!-- Right navigation -->
+            
+           <div class = "w-full h-full overflow-y-auto">
+            
+
+            
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> 
 
             <!-- Registered Patients -->    
             <div class="bg-white shadow-md rounded-lg p-6">
             <div >
-            <button class="bg-blue-800 px-4 py-2 rounded hover:bg-blue-700"><a>Add Patient</a></button>
+            <button class="bg-blue-800 px-4 py-2 rounded text-center hover:bg-blue-700 text-white font-bold">
+            <a class= "text-white font-bold self-center">Add Patient</a>
+            </button>
                 <h2 class="text-xl font-bold text-blue-600 mb-4">Registered Patients</h2>
                 </div >
                 <ul class="space-y-2">
@@ -53,6 +72,8 @@
                     <li class="p-4 bg-gray-100 rounded shadow">Case A</li>
                     <li class="p-4 bg-gray-100 rounded shadow">Case B</li>
                 </ul>
+            </div>
+            
             </div>
 
         </div>
