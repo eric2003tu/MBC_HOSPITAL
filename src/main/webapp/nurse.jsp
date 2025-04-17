@@ -20,13 +20,16 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container mx-auto mt-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Main Content -->              
+    <div class="container mx-auto mt-8"> 
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> 
 
-            <!-- Registered Patients -->
+            <!-- Registered Patients -->    
             <div class="bg-white shadow-md rounded-lg p-6">
+            <div >
+            <button class="bg-blue-800 px-4 py-2 rounded hover:bg-blue-700"><a>Add Patient</a></button>
                 <h2 class="text-xl font-bold text-blue-600 mb-4">Registered Patients</h2>
+                </div >
                 <ul class="space-y-2">
                     <li class="p-4 bg-gray-100 rounded shadow">Patient 1</li>
                     <li class="p-4 bg-gray-100 rounded shadow">Patient 2</li>
